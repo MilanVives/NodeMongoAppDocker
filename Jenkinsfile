@@ -7,8 +7,9 @@ pipeline {
         steps {
           /*sh 'docker-compose up --build'*/
           sh '''
-            ls
-            cat /etc/os-release
+            apt update && apt install docker docker-compose
+            docker --version
+            docker compose version
             '''
         }
       }
