@@ -7,8 +7,8 @@ pipeline {
         steps {
           /*sh 'docker-compose up --build'*/
           sh '''
-          docker --version
-          docker compose version
+            ls
+            cat /etc/os-release
             '''
         }
       }
