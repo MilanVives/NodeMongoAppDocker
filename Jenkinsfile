@@ -7,9 +7,10 @@ pipeline {
         steps {
           /*sh 'docker-compose up --build'*/
           sh '''
-            apt update && apt install docker docker-compose
-            docker --version
-            docker compose version
+            echo "DIt wordt uitgevoerd in mijn jenkins container"
+            echo "Install"
+            echo " Test"
+            echo "deploy"
             '''
         }
       }
